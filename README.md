@@ -31,6 +31,7 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 
 ### Stres Testi
 - 5000 animasyonlu bir stress testi yapılmıştır, testin videosu linki:
+
 [StressTest](https://www.youtube.com/watch?v=QTU1Qaig17Q)
 
 ### Extralar
@@ -47,6 +48,7 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 
 ## Genel Mekaniklerin Gösterimi
 - CoreGameplay videosu linki:
+
 [Gameplay](https://www.youtube.com/watch?v=bg7A8Sjn7iQ)
 
 ---
