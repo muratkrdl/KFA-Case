@@ -1,6 +1,7 @@
 # Tower Defence Prototype (KFA Case Study)
 
 Bu proje, KFA Entertainment tarafından verilen case study kapsamında geliştirilmiştir.
+
 Amaç; Unityde 3D bir ortamda 2D assetleri kullanarak (Billboard tarzı) temel bir oyun mekaniği geliştirme, oyun motoruna hâkimiyet ve kod yapısı oluşturma becerilerini değerlendirmek.
 
 ## Kullanılan Oyun Motoru ve Versiyonu
