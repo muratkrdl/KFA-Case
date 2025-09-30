@@ -27,13 +27,13 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 
 #### Normal-Düşmanlar
 - Goblin:
-<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Goblin.png" width="480px">
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Goblin.png" width="96px">
 
 -Wolf:
-<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Wolf.png" width="480px">
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Wolf.png" width="96px">
 
 Boss:
-<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Boss.png" width="480px">
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Boss.png" width="96px">
 
 ### Harita
 - Yolun başı ve sonu vardır.  
