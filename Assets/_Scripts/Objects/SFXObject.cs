@@ -1,3 +1,5 @@
+using System;
+using System.Threading;
 using _Scripts.Data.UnityObjects.SO;
 using _Scripts.Systems.ObjectPooling;
 using Cysharp.Threading.Tasks;
@@ -10,8 +12,15 @@ namespace _Scripts.Objects
     public class SFXObject : MonoBehaviour, IPoolObject<SFXObject>
     {
         [SerializeField] private AudioSource audioSource;
-    
+
+        private CancellationTokenSource _cts;
+
         private ObjectPool<SFXObject> _pool;
+
+        private void Awake()
+        {
+            _cts = new CancellationTokenSource();
+        }
 
         public void SetPool(ObjectPool<SFXObject> pool)
         {
@@ -38,7 +47,7 @@ namespace _Scripts.Objects
 
         private async UniTaskVoid Release()
         {
-            await UniTask.WaitUntil(() => !audioSource.isPlaying);
+            await UniTask.WaitUntil(() => !audioSource.isPlaying, cancellationToken: _cts.Token);
             ReleasePool();
         }
 
@@ -46,6 +55,12 @@ namespace _Scripts.Objects
         {
             _pool.Release(this);
         }
-    
+
+        private void OnDestroy()
+        {
+            _cts?.Cancel();
+            _cts?.Dispose();
+        }
+
     }
 }

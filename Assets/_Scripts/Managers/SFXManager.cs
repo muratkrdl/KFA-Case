@@ -16,13 +16,15 @@ namespace _Scripts.Managers
         private AudioMixer _audioMixer;
 
         private SFXObjectPool _sfxObjectPool;
-        
+
         private void Awake()
         {
-            SFXData[] sfxs = Resources.LoadAll<SFXData>("Data/SFXs");
+            SFXData[] sfxs = Resources.LoadAll<SFXData>("Data/SFXs/SFXsData");
             _sfxDataDictionary = sfxs.ToDictionary(sfx => sfx.name, sfx => sfx);
             
-            _audioMixer = Resources.Load<AudioMixer>("Data/SFXAudioMixer");
+            _audioMixer = Resources.Load<AudioMixer>("Data/SFXs/SFXAudioMixer");
+
+            _sfxObjectPool = ServiceLocator.ServiceLocator.Get<SFXObjectPool>();
         }
 
         public void PlaySFX(string sfxName, Vector3 position = default) // position = Vector3.Zero
@@ -33,7 +35,7 @@ namespace _Scripts.Managers
             sfxObject.SetPosition(position);
             sfxObject.Play(data, GetAudioMixerGroupByType(data.type));
         }
-        
+
         private AudioMixerGroup GetAudioMixerGroupByType(SFXType type)
         {
             return _audioMixer.FindMatchingGroups(type switch

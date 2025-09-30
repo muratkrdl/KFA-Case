@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e2cb51a1ba4a938954e24d204b432d, type: 3}
+  m_Name: Goblin
+  m_EditorClassIdentifier: 
+  WalkFrames:
+  - {fileID: -1141861202, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  - {fileID: -1099261976, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  - {fileID: -291222026, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  - {fileID: 45562687, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  - {fileID: 882317961, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  - {fileID: -2061292749, guid: 88f3d442e87961741a4721095069fb39, type: 3}
+  DieFrames:
+  - {fileID: 21300000, guid: 172da2e1a573317489c5824d17b5844b, type: 3}
+  - {fileID: 21300000, guid: 172da2e1a573317489c5824d17b5844b, type: 3}
+  - {fileID: 21300000, guid: 172da2e1a573317489c5824d17b5844b, type: 3}

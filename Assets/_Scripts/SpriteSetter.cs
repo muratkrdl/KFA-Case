@@ -1,4 +1,4 @@
-using _Scripts.Utilities;
+using _Scripts.Extensions;
 using UnityEngine;
 
 namespace _Scripts
@@ -8,22 +8,20 @@ namespace _Scripts
         
         private void Start()
         {
-            Transform lookTarget = ConstUtilities.MainCamera.transform;
-            
-            SetChildRotation(transform, lookTarget);
+            SetChildBillboard(transform);
         }
 
-        private void SetChildRotation(Transform parent, Transform lookTarget)
+        private void SetChildBillboard(Transform parent)
         {
             foreach (Transform child in parent)
             {
                 if (child.TryGetComponent<SpriteRenderer>(out _))
                 {
-                    child.forward = lookTarget.forward;
+                    child.LookCamera();
                 }
                 else
                 {
-                    SetChildRotation(child, lookTarget);
+                    SetChildBillboard(child);
                 }
             }
         }

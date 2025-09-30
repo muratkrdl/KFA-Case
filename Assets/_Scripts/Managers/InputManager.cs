@@ -1,5 +1,6 @@
 using _Scripts.Events;
 using _Scripts.Utilities;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,7 +11,7 @@ namespace _Scripts.Managers
         private PlayerInputActions _playerInputActions;
 
         private InputEvents _inputEvents;
-        
+
         protected virtual void Awake()
         {
             _inputEvents = ServiceLocator.ServiceLocator.Get<InputEvents>();
@@ -27,20 +28,22 @@ namespace _Scripts.Managers
 
         private void SubscribeEvents()
         {
-            _playerInputActions.Player.Move.started += OnMoveStart;
+            _playerInputActions.Player.Move.performed += OnMoveStart;
             _playerInputActions.Player.Move.canceled += OnMoveStop;
         }
 
         private void OnMoveStart(InputAction.CallbackContext obj)
         {
-            _inputEvents.OnMoveStart?.Invoke(obj.ReadValue<Vector2>());
+            var vec2 = obj.ReadValue<Vector2>();
+            float3 realValue = new float3(vec2.x, 0, vec2.y);
+            _inputEvents.OnMoveStart?.Invoke(realValue);
         }
 
         private void OnMoveStop(InputAction.CallbackContext obj)
         {
-            _inputEvents.OnMoveStop?.Invoke(ConstUtilities.Zero2);
+            _inputEvents.OnMoveStop?.Invoke(ConstUtilities.Zero3);
         }
-        
+
         private void UnSubscribeEvents()
         {
             _playerInputActions.Player.Move.started -= OnMoveStart;
@@ -51,6 +54,6 @@ namespace _Scripts.Managers
         {
             UnSubscribeEvents();
         }
-        
+
     }
 }

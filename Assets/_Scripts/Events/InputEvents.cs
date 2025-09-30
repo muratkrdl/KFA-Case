@@ -6,7 +6,7 @@ namespace _Scripts.Events
 {
     public class InputEvents : MonoBehaviour
     {
-        public UnityAction<float2> OnMoveStart;
-        public UnityAction<float2> OnMoveStop;
+        public UnityAction<float3> OnMoveStart;
+        public UnityAction<float3> OnMoveStop;
     }
 }

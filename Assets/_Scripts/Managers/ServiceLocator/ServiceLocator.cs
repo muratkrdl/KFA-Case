@@ -10,7 +10,6 @@ namespace _Scripts.Managers.ServiceLocator
         public static void Register<T>(T service) where T : class
         {
             var type = typeof(T);
-
             Services[type] = service;
         }
 
