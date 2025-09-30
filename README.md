@@ -29,10 +29,10 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 - Goblin:
 <img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Goblin.png" width="96px">
 
--Wolf:
+- Wolf:
 <img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Wolf.png" width="96px">
 
-Boss:
+- Boss:
 <img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Boss.png" width="96px">
 
 ### Harita
