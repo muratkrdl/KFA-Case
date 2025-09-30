@@ -25,6 +25,16 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 - Renk değişimleriyle farklı özellikler (can/hız/güç).
 - Bir tuş ile erken wave çağırma(n tuşu).
 
+#### Normal-Düşmanlar
+- Goblin:
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Goblin.png" width="480px">
+
+-Wolf:
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Wolf.png" width="480px">
+
+Boss:
+<img src="https://github.com/muratkrdl/KFA-Case/blob/main/IMAGES/Boss.png" width="480px">
+
 ### Harita
 - Yolun başı ve sonu vardır.  
 - Haritanın kenarına ulaşıldığında düşman başarılı sayılır(sağ).
