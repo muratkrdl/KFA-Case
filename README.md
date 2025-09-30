@@ -6,14 +6,14 @@ Amaç; Unityde 3D bir ortamda 2D assetleri kullanarak (Billboard tarzı) temel b
 ## Kullanılan Oyun Motoru ve Versiyonu
 - Unity 6000.0.51f1
 
-## 📌 Proje Özeti
+## Proje Özeti
 Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuştur:  
 - Oyuncu karakteri, **WASD ile hareket eder** ve en yakın düşmana otomatik saldırı yapar.  
 - Düşmanlar **dalga dalga (Wave based)** sahneye gelir ve belirlenmiş yolu takip ederek haritanın sonuna ulaşmaya çalışır.  
 - Düşmanların istatistikleri (can, hız, saldırı gücü) renk değiştirerek temsil edilir.(Mavi = hız, Kırmızı = can, Yeşil = güç)
 - Oyun 3D bir dünya üzerinde, ancak tüm karakterler ve düşmanlar 2D sprite’larla bilboard tekniğiyle görselleştirilmiştir.
 
-## 🕹️ Oynanış Mekanikleri
+## Oynanış Mekanikleri
 ### Oyuncu
 - WASD ile hareket.  
 - En yakındaki rakibe otomatik menzilli saldırı.
