@@ -41,7 +41,7 @@ Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuşt
 - Haritanın kenarına ulaşıldığında düşman başarılı sayılır(sağ).
 
 ### Stres Testi
-- 5000 animasyonlu bir stress testi yapılmıştır, testin videosu linki:
+- 5000 animasyonlu bir stress testi yapılmıştır, testin video linki:
 
 [StressTest](https://www.youtube.com/watch?v=QTU1Qaig17Q)
 
