@@ -5,7 +5,7 @@ Bu proje, KFA Entertainment tarafından verilen case study kapsamında geliştir
 Amaç; Unityde 3D bir ortamda 2D assetleri kullanarak (Billboard tarzı) temel bir oyun mekaniği geliştirme, oyun motoruna hâkimiyet ve kod yapısı oluşturma becerilerini değerlendirmek.
 
 ## Kullanılan Oyun Motoru ve Versiyonu
-- Unity 6000.0.51f1
+- Unity 6000.0.51f1 LTS
 
 ## Proje Özeti
 Bu prototipte, Tower Defence türünde temel bir oyun döngüsü oluşturulmuştur:  
